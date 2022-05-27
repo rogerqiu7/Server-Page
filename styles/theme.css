@@ -1,0 +1,145 @@
+/* Set universal margin, padding and font */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	background: #091921;
+	color: #f3f3f3;
+}
+
+/* center and englargen title */
+h1 {
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 80px;
+}
+
+h2 {
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 40px;
+}
+
+header {
+	top: 0px;
+	left: 0px;
+	display: grid;
+	grid-template-areas:
+		"heading ."
+		"nav nav";
+	width: -moz-available;
+	width: -webkit-fill-available;
+}
+
+#heading-div {
+	display: flex;
+	grid-area: heading;
+	padding: 2%;
+}
+
+.topnav {
+	text-shadow: none;
+	grid-area: nav;
+	overflow: hidden;
+	background: rgb(31, 57, 75);
+	background: linear-gradient(
+		52deg,
+		rgba(32, 116, 174, 1) 0%,
+		rgb(13, 147, 174) 100%
+	);
+}
+
+.topnav a {
+	float: left;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+	background: rgb(31, 57, 75);
+}
+
+.topnav a:hover {
+	color: black;
+	background-color: slategray;
+}
+
+.topnav a.active {
+	color: white;
+	background-color: rgb(18, 81, 143);
+}
+
+.main-content {
+	margin: 15px;
+	padding: 10px 25px;
+	font-size: 28px;
+}
+
+.about-main-content {
+	margin: 15px;
+	padding: 5px 25px;
+	font-size: 16px;
+}
+
+ul {
+	list-style: circle;
+	margin-left: 10px;
+}
+
+li {
+	margin: 1%;
+}
+
+form input {
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+form textarea {
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#submit-listitem {
+	list-style: none;
+}
+
+#submitbtn {
+	box-shadow: 1px 1px 1px rgb(49, 45, 45);
+	border: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 5px 25px;
+	font-size: 17px;
+	background-color: rgb(90, 216, 255);
+}
+
+#submitbtn:hover {
+	box-shadow: 1px 1px 2px rgb(201, 196, 196);
+	color: white;
+	background-color: rgb(61, 109, 157);
+}
+
+/* set footer to be at bottom of page */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	font-size: 16px;
+	color: #fff;
+	font-family: "Roboto", arial;
+	text-align: center;
+}
+
+/* let visited github link to remain white */
+a:visited {
+	color: white;
+}
