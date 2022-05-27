@@ -49,31 +49,26 @@ header {
 	grid-area: nav;
 	overflow: hidden;
 	background: rgb(31, 57, 75);
-	background: linear-gradient(
-		52deg,
-		rgba(32, 116, 174, 1) 0%,
-		rgb(13, 147, 174) 100%
-	);
 }
 
 .topnav a {
 	float: left;
-	font-size: 17px;
+	font-size: 24px;
 	color: white;
 	text-align: center;
 	padding: 10px 20px;
 	text-decoration: none;
-	background: rgb(31, 57, 75);
+	background: #03b1ff;
 }
 
 .topnav a:hover {
 	color: black;
-	background-color: slategray;
+	background-color: #74ff3b;
 }
 
 .topnav a.active {
 	color: white;
-	background-color: rgb(18, 81, 143);
+	background-color: #ff3077;
 }
 
 .main-content {
@@ -98,13 +93,15 @@ li {
 }
 
 form input {
+	font-size: 20px;
 	border-radius: 5px;
-	border: 1px solid black;
+	border: 1px solid #03b1ff;
 }
 
 form textarea {
+	font-size: 20px;
 	border-radius: 5px;
-	border: 1px solid black;
+	border: 1px solid #03b1ff;
 }
 
 #submit-listitem {
@@ -112,19 +109,18 @@ form textarea {
 }
 
 #submitbtn {
-	box-shadow: 1px 1px 1px rgb(49, 45, 45);
 	border: none;
 	border-radius: 5px;
 	margin-top: 10px;
 	padding: 5px 25px;
-	font-size: 17px;
-	background-color: rgb(90, 216, 255);
+	font-size: 24px;
+	background-color: #03b1ff;
 }
 
 #submitbtn:hover {
-	box-shadow: 1px 1px 2px rgb(201, 196, 196);
 	color: white;
-	background-color: rgb(61, 109, 157);
+	background-color: #74ff3b;
+	cursor: pointer;
 }
 
 /* set footer to be at bottom of page */
