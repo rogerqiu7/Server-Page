@@ -1,4 +1,4 @@
-/* Set universal margin, padding and font */
+/* Set universal margin, padding and font and colors */
 *,
 *::before,
 *::after {
@@ -12,102 +12,88 @@
 
 /* center and englargen title */
 h1 {
-	color: white;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	text-align: center;
 	font-size: 80px;
 }
 
+/* smaller title for 404 */
 h2 {
-	color: white;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	text-align: center;
 	font-size: 40px;
 }
 
-header {
-	top: 0px;
-	left: 0px;
-	display: grid;
-	grid-template-areas:
-		"heading ."
-		"nav nav";
-	width: -moz-available;
-	width: -webkit-fill-available;
-}
-
-#heading-div {
-	display: flex;
-	grid-area: heading;
-	padding: 2%;
-}
-
-.topnav {
-	text-shadow: none;
-	grid-area: nav;
+/* navbar extend to end and background color*/
+nav {
 	overflow: hidden;
 	background: rgb(31, 57, 75);
 }
 
-.topnav a {
+/* navbar style*/
+nav a {
 	float: left;
 	font-size: 24px;
-	color: white;
+
 	text-align: center;
 	padding: 10px 20px;
 	text-decoration: none;
 	background: #03b1ff;
 }
 
-.topnav a:hover {
+/* navbar hover style*/
+nav a:hover {
 	color: black;
 	background-color: #74ff3b;
 }
 
-.topnav a.active {
-	color: white;
+/* navbar active button style*/
+nav a.active {
 	background-color: #ff3077;
 }
 
+/* main content style*/
 .main-content {
 	margin: 15px;
 	padding: 10px 25px;
 	font-size: 28px;
 }
 
-.about-main-content {
-	margin: 15px;
-	padding: 5px 25px;
-	font-size: 16px;
-}
-
+/* list style */
 ul {
 	list-style: circle;
 	margin-left: 10px;
 }
 
+/* list margin */
 li {
 	margin: 1%;
 }
 
+/* form input style */
 form input {
+	margin: 5px;
 	font-size: 20px;
 	border-radius: 5px;
 	border: 1px solid #03b1ff;
 }
 
+/* form input style */
 form textarea {
+	margin: 5px;
 	font-size: 20px;
 	border-radius: 5px;
 	border: 1px solid #03b1ff;
 }
 
+/* button not on list*/
 #submit-listitem {
 	list-style: none;
 }
 
+/* button style */
 #submitbtn {
 	border: none;
 	border-radius: 5px;
@@ -117,6 +103,7 @@ form textarea {
 	background-color: #03b1ff;
 }
 
+/* button hover style */
 #submitbtn:hover {
 	color: white;
 	background-color: #74ff3b;

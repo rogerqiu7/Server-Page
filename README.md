@@ -1,12 +1,9 @@
-# basic_info_site
+# 🗂️ Server Page
 
-NodeJS project for The Odin Project's Fullstack JavaScript Path
----
+## Description
 
-Very simple project to learn NodeJS   
-   
-It took a little time but I figured out how to add styles to the server.   
-Now I'm able to quickly add stylsheets for requested pages by looking for requests sent by the rendered HTML files with CSS file extensions.   
-If a requested file matches a file inside the styles directory the stylesheet is written to the response.   
-     
-After adding the server code to make it work I had a lot of fun playing with color gradients at [cssgradient.io](https://cssgradient.io/) and finally settled on the blue gradient theme.   
+This is a simple server page is running on a Node.js server being accessed in localhost:3000. It is built using HTML, CSS and JS. Each URL requests a different page and the server routes the request to the correct document. Inspiration and guide for this project is from The Odin Project course. You can access this project on my website or at the link in the "About" section of this page.
+
+## Flowchart
+
+![image](https://user-images.githubusercontent.com/84350865/168444580-cac7c3cd-656c-4a52-b19e-90f72ee76c45.png)

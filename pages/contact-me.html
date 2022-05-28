@@ -4,54 +4,61 @@
 		<title>Contact Me</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="theme.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-			rel="stylesheet"
-		/>
 	</head>
 
 	<body>
-		<div id="title">
-			<h1>Contact me</h1>
-		</div>
+		<!--Header-->
 		<header>
-			<div class="topnav">
-				<a href="/">Home</a>
-				<a href="about">About</a>
-				<a class="active" href="contact-me">Contact Me</a>
-			</div>
+			<h1>Contact me</h1>
 		</header>
 
+		<!--Navbar-->
+		<nav>
+			<a href="/">Home</a>
+			<a href="about">About</a>
+			<a class="active" href="contact-me">Contact Me</a>
+		</nav>
+
+		<!--Main-->
 		<div class="main-content">
 			<form>
 				<ul>
 					<li>
+						<!--Name and inputbox-->
 						<label for="name">Your Name: </label><br />
 						<input type="text" id="name" name="name" />
 					</li>
 					<br />
 					<li>
-						<label for="subject">The Subject: </label><br />
+						<!--Subject and inputbox-->
+						<label for="subject">Subject: </label><br />
 						<input type="text" id="subject" name="subject" />
 					</li>
 					<br />
 					<li>
-						<label for="message">Your Message: </label><br />
+						<!--message and inputbox-->
+						<label for="message">Message: </label><br />
 						<textarea id="message" name="message" rows="6" cols="60"></textarea>
 					</li>
 					<li id="submit-listitem">
-						<input id="submitbtn" type="submit" value="Submit" />
+						<input
+							id="submitbtn"
+							type="submit"
+							value="Submit"
+							onclick="document.location =  'mailto:rogerqiu7@gmail.com'"
+						/>
 					</li>
 				</ul>
 			</form>
 		</div>
 
+		<!--Footer-->
 		<footer>
-			Page created using HTML, CSS & Javascript, source code available
-			<a href="https://github.com/rogerqiu7/Web-Portfolio">
-				here on my GitHub
-			</a>
+			Page created using HTML, CSS & Javascript, source code available<a
+				href="https://github.com/rogerqiu7/Web-Portfolio"
+			>
+				here on my GitHub</a
+			>
 		</footer>
 	</body>
 </html>

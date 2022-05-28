@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>About</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="theme.css" />
   <link rel="stylesheet" href="aboutpage.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
 </head>
 
-<body>
+  <body>
+    <!--Header-->
+    <header>
+      <h1>About</h1>
+    </header>
 
-  <div id="title">
-    <h1>About</h1>
-  </div>
-
-  <header>
-    <div class="topnav">
+    <!--Navbar-->
+    <nav>
       <a href="/">Home</a>
       <a class="active" href="about">About</a>
       <a href="contact-me">Contact Me</a>
+    </nav>
+  
+    <!--Main-->
+    <div class="main-content">
+      <ul>
+        <li>This server sends requests through URL and handles responses in HTML or CSS</li>
+        <li>Each URL requests a different page and the server routes the request to the correct document</li>
+        <li>The document then requests any other files it may need, like script files or stylesheets</li>
+        <li>If no file is found, it routes the bad request to a custom <a href="404"">404 page</a>.</li>
+      </ul>
     </div>
-  </header>
 
-  <div class="about-main-content">
-    <ul>
-      <li>This server handles requests through URL and sends responses in HTML or CSS</li>
-      <li>Each URL requests a different page and the server routes the request to the correct document</li>
-      <li>The document then requests any other files it may need, like script files or stylesheets</li>
-      <li>If no file can be found matching the requested url a 404 error is thrown</li>
-      <li>Instead of this crashing the server, it routes the bad request to a custom <a href="404"">404 page</a>.</li>
-    </ul>
-  </div>
-
-  <footer>
-    Page created using HTML, CSS & Javascript, source code available
-    <a href="https://github.com/rogerqiu7/Web-Portfolio">
-      here on my GitHub
-    </a>
-  </footer>
-</body>
+    <!--Footer-->
+    <footer>
+      Page created using HTML, CSS & Javascript, source code available<a href="https://github.com/rogerqiu7/Web-Portfolio"> here on my GitHub</a>
+    </footer>
+  </body>
 
 </html>
